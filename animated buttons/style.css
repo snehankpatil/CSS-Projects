@@ -1,0 +1,41 @@
+#wrapper{
+    height: 100vh;
+}
+
+.btn{
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+button{
+    align-self: center;
+    width: 9rem;
+    height: 3rem;
+    background-color: rgba(219, 66, 66, 0.889);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.427);
+    color: white;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 0px;
+    
+    animation: snehank 2s linear 0s;
+    animation-direction: normal; 
+    /* transition: background-color 1s ease-in-out ; */ 
+}
+
+@keyframes snehank {
+    form{
+        background-color: rgba;
+    }
+    to{
+        background-color: black;
+    }
+}
+
+
+
+button:hover{
+    background-color: black;
+}

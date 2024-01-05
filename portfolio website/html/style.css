@@ -1,0 +1,29 @@
+#wrapper{
+    height: 100vh;
+    overflow: hidden;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    position: relative;
+    animation: sneh 3s linear 0s infinite alternate;
+    
+}
+@keyframes sneh {
+    0%{
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        left: 5rem;
+        transform: rotate(90deg);
+    }
+    
+}

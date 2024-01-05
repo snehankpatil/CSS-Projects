@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+#wrapper{ 
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 7px; 
+}
+
+.container{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; 
+    z-index: -1;
+    height: 100%;
+}
+
+
+#background,#foreground{
+    position: absolute;
+    z-index: -1; 
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#background{ 
+    transform: translateZ(-40px) scale(7);  
+}
+#foreground{  
+    transform: translateZ(-20px) scale(5); 
+}
+
+h1{
+    color: aliceblue;
+    font-size: 5rem;
+}
+
+.sec2{
+    position: relative;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.normal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    z-index: -1;
+    
+}

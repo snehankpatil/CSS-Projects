@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: #0cf;
+    font-family: Arial;
+}
+#wrapper{
+    overflow-x: hidden;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    background-color: rgb(141, 116, 116);
+    align-items: center; 
+}
+
+a{
+    text-decoration: none;
+}
+ 
+.button{
+  background-color: #0cf;
+  color: rgb(246, 249, 251);
+  font-size: 2rem;
+  padding:1rem 2rem;
+  border-radius: 2rem  ;
+  letter-spacing: 0.2rem;
+  transition: all 1s;
+}
+
+.button:hover{ 
+  box-shadow: inset  400px 0 0 0 rgb(6, 46, 56);
+}

@@ -1,0 +1,62 @@
+#wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6766;
+    font-family: 'Open Sans Condensed',
+    
+}
+
+.btn{
+    color: rgba(255, 255, 255, 0.995);
+    word-spacing: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    padding:1rem 4rem;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin:unset;   
+}
+
+.btn:hover::before{ 
+    transform: scaleX(1);  
+}
+
+.btn:hover{ 
+    letter-spacing: 2px;  
+    /* as ::before dont cotent any thing letter spacing has to be mention on the .btn itself */     
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn:hover::after {
+    opacity: 0; 
+    transform-origin: right;
+    transform: scale(0.1, 1);
+  }
+

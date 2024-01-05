@@ -1,0 +1,101 @@
+*{
+    padding:0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    height: 100vh;
+    perspective: 10px;
+    /* enabling the perspective  */
+}
+
+.container1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    height: 100%;  
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.foreground,.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object fit and background fit are used for setting the image correctly */
+    z-index: -1; 
+} 
+
+h1{
+    position: absolute;  
+    left: 25%;
+    top: 5rem; 
+    letter-spacing: 4px;
+    font-size: 7rem;
+    /* font-family:  monospace; */
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0, 0.3);
+}
+
+section{
+    background-color: rgb(45,45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    color: white;
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size:cover;
+    background-image: url(sport-1.jpg); 
+}
+
+.bg1{
+    background-image: url(sport-1.jpg); 
+}
+.secHeading2{
+    background-color: white;
+    color: black;
+    font-size: 3.5rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.bg2{
+    background-image: url(sport-2.jpg); 
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+    
+}
+
